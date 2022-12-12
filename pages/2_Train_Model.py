@@ -13,7 +13,6 @@ pathlib.PosixPath = pathlib.WindowsPath
 
 
 name=st.text_input("Enter the name for your model")
-epochs= st.number_input("Choose a number of epochs", value=8)
 learning_rate_min=st.number_input("Enter a minimum value of learning rate range", value=1e-6)
 learning_rate_max=st.number_input("Enter a maximum value of learning rate range", value=1e-4)
 epochs_2=st.number_input("Choose another number of epochs", value=4)
@@ -35,15 +34,23 @@ def train(epochs, epochs_2, learning_rate_min, learning_rate_max ):
     st.write(data)
     st.write(data.train.show_batch())
     learn = vision_learner(data, models.resnet50, metrics=(accuracy, error_rate))
-    learn.fit_one_cycle(epochs)
-    st.write(epochs)
+    
+    learn.load("../fastAIBestSoFar")
+    
     learn.lr_find()
     st.write(f'Your {name} model finished 1st part of training.')
+    
+    #make it show graph please
+    
     learn.unfreeze()
     learn.fit_one_cycle(epochs_2, slice(learning_rate_min,learning_rate_max))
     st.write(f'Your {name} model finished training.')
-    learn.save(name)
+    learn.save(f"./{name}")
     st.write(f'{name} has been saved.')
+    
+    # shows confusion matrix -> will make graph
+    interp = ClassificationInterpretation.from_learner(learn)
+    interp.plot_confusion_matrix()
 
 if train_button:
     train(epochs,epochs,learning_rate_min,learning_rate_max)
