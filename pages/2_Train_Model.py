@@ -53,6 +53,6 @@ def train(epochs_2, learning_rate_min, learning_rate_max ):
     interp.plot_confusion_matrix()
 
 if train_button:
-    train(epochs,epochs,learning_rate_min,learning_rate_max)
+    train(epochs_2,learning_rate_min,learning_rate_max)
     st.write(pathlib.PosixPath)
   
