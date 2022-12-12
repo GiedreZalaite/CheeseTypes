@@ -2,7 +2,10 @@ from keras.models import load_model
 from PIL import Image, ImageOps 
 import numpy as np
 import streamlit as st
+import pathlib
 
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
 model = load_model('keras.h5', compile=False)
 
 cheese_types = ['Blue Danish', 'Brie', 'Cottage', 'Feta', 'Parmesan']
