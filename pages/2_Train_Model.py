@@ -21,7 +21,7 @@ train_button=st.button("Start training")
 st.write("The model has started to train.")
 
 
-def train(epochs, epochs_2, learning_rate_min, learning_rate_max ):
+'''def train(epochs, epochs_2, learning_rate_min, learning_rate_max ):
     
     path = 'AllCheeseData/'
     cheese = DataBlock(
@@ -44,7 +44,8 @@ def train(epochs, epochs_2, learning_rate_min, learning_rate_max ):
     st.write(f'Your {name} model finished training.')
     learn.save(name)
     st.write(f'{name} has been saved.')
-
+'''
 if train_button:
-    train(epochs,epochs,learning_rate_min,learning_rate_max)
+    '''train(epochs,epochs,learning_rate_min,learning_rate_max)'''
+    st.write(pathlib.PosixPath)
   
