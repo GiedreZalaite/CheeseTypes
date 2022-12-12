@@ -2,9 +2,11 @@ from keras.models import load_model
 from PIL import Image, ImageOps #Install pillow instead of PIL
 import numpy as np
 import streamlit as st
+import pathlib
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
-
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
 # Load the model
 model = load_model('TeachableMachine_Model.h5', compile=False)
 
