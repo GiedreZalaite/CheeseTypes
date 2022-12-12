@@ -42,6 +42,10 @@ else:
         cheese_type='Parmesan'
 
     st.write(f'Your uploaded cheese is : {cheese_type}')
-    
+    st.write(f'Your uploaded cheese is : {cheese_type}')
+    if extradata2[extradata1]<0.80:
+        st.write("The uploaded image might no be a cheese as the probability is not high enough.")
+    probab=tf.math.round(extradata2[extradata1]*100)   
+    st.write(f"Probability: {probab}%")
 
 
