@@ -45,7 +45,7 @@ def train(epochs, epochs_2, learning_rate_min, learning_rate_max ):
     learn.unfreeze()
     learn.fit_one_cycle(epochs_2, slice(learning_rate_min,learning_rate_max))
     st.write(f'Your {name} model finished training.')
-    learn.save(f"./{name}")
+#     learn.save(f"./{name}")
     st.write(f'{name} has been saved.')
     
     # shows confusion matrix -> will make graph
