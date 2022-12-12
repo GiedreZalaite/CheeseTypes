@@ -27,7 +27,7 @@ def train(epochs_2, learning_rate_min, learning_rate_max ):
         get_y=parent_label,
         item_tfms=Resize(224))
     cheese= cheese.new(item_tfms=RandomResizedCrop(128, min_scale=0.3))
-    data = cheese.dataloaders(open(path, 'rb')
+    data = cheese.dataloaders(open(path, 'rb'))
     st.write(data)
     st.write(data.train.show_batch())
     learn = vision_learner(data, models.resnet50, metrics=(accuracy, error_rate))
