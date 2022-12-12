@@ -1,10 +1,6 @@
 import streamlit as st
-import fastbook
-fastbook.setup_book()
-from fastbook import *
 from fastai.vision.widgets import *
 from fastai.vision.all import *
-
 from PIL import Image
 import pathlib
 
