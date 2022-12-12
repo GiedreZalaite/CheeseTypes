@@ -9,6 +9,7 @@ import pathlib
 
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
+plt = platform.system()
 
 name=st.text_input("Enter the name for your model")
 epochs= st.number_input("Choose a number of epochs", value=8)
