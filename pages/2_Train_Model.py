@@ -20,7 +20,7 @@ train_button=st.button("Start training")
 st.write("The model has started to train.")
 
 
-def train(epochs, epochs_2, learning_rate_min, learning_rate_max ):
+def train(epochs_2, learning_rate_min, learning_rate_max ):
     
     path = 'AllCheeseData/'
     cheese = DataBlock(
