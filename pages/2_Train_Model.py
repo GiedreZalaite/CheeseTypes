@@ -22,7 +22,7 @@ st.write("The model has started to train.")
 
 def train(epochs_2, learning_rate_min, learning_rate_max ):
     
-    path = '/AllCheeseData/'
+    path = '/app/cheesetypes/AllCheeseData/'
     cheese = DataBlock(
         blocks=(ImageBlock, CategoryBlock), 
         get_items=get_image_files, 
