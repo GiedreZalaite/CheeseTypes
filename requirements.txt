@@ -1,7 +1,7 @@
 streamlit
+tensorflow
 pandas
 numpy
-pickle
 fastbook
 pathlib
 pillow
