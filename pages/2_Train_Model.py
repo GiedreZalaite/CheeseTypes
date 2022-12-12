@@ -1,9 +1,10 @@
 import streamlit as st
 import fastbook
 #fastbook.setup_book()
-from fastbook import *
+'''from fastbook import *
 from fastai.vision.widgets import *
 from fastai.vision.all import *
+'''
 from PIL import Image
 import pathlib
 
@@ -45,7 +46,7 @@ st.write("The model has started to train.")
     learn.save(name)
     st.write(f'{name} has been saved.')
 '''
-if train_button:
+'''if train_button:
     '''train(epochs,epochs,learning_rate_min,learning_rate_max)'''
-    st.write(pathlib.PosixPath)
+    st.write(pathlib.PosixPath)'''
   
