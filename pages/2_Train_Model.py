@@ -2,11 +2,11 @@ import streamlit as st
 from fastai.vision.widgets import *
 from fastai.vision.all import *
 from PIL import Image
-import pathlib
-from pathlib import Path
+# import pathlib
+# from pathlib import Path
 
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+# temp = pathlib.PosixPath
+# pathlib.PosixPath = pathlib.WindowsPath
 
 
 name=st.text_input("Enter the name for your model")
