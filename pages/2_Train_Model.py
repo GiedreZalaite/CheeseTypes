@@ -7,10 +7,10 @@ from fastai.vision.all import *
 from PIL import Image
 import pathlib
 
-#temp = pathlib.PosixPath
-#pathlib.PosixPath = pathlib.WindowsPath
-plt = platform.system()
-if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+##plt = platform.system()
+##if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 
 name=st.text_input("Enter the name for your model")
 epochs= st.number_input("Choose a number of epochs", value=8)
