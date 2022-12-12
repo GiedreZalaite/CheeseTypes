@@ -7,7 +7,7 @@ from pathlib import Path
 
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
- st.write(pathlib.PosixPath)
+ st.write(temp)
 
 name=st.text_input("Enter the name for your model")
 learning_rate_min=st.number_input("Enter a minimum value of learning rate range", value=1e-6)
