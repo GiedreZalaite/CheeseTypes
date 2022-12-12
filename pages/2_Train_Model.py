@@ -5,9 +5,13 @@ from PIL import Image
 import pathlib
 from pathlib import Path
 
-temp = pathlib.PosixPath
+# temp = pathlib.PosixPath
 #pathlib.PosixPath = pathlib.WindowsPath
 #st.write(temp)
+
+import pathlib
+plt = platform.system()
+if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 
 name=st.text_input("Enter the name for your model")
 learning_rate_min=st.number_input("Enter a minimum value of learning rate range", value=1e-6)
