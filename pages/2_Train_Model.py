@@ -47,6 +47,6 @@ st.write("The model has started to train.")
     st.write(f'{name} has been saved.')
 '''
 '''if train_button:
-    '''train(epochs,epochs,learning_rate_min,learning_rate_max)'''
+    train(epochs,epochs,learning_rate_min,learning_rate_max)
     st.write(pathlib.PosixPath)'''
   
