@@ -8,8 +8,8 @@ from fastai.vision.all import *
 from PIL import Image
 import pathlib
 
-temp = pathlib.PosixPath
-pathlib.PosixPath = pathlib.WindowsPath
+'''temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath'''
 ##plt = platform.system()
 ##if plt == 'Windows': pathlib.PosixPath = pathlib.WindowsPath
 
