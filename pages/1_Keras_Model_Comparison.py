@@ -8,7 +8,7 @@ temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 model = load_model('keras.h5', compile=False)
 
-st.header("Keras model prediction"
+st.header("Keras model prediction")
 cheese_types = ['Blue Danish', 'Brie', 'Cottage', 'Feta', 'Parmesan']
 
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
