@@ -9,7 +9,7 @@ temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 # Load the model
 model = load_model('TeachableMachine_Model.h5', compile=False)
-
+st.header("Google Teachable Machine model prediction")
 # Load the labels
 class_names = open('labels.txt', 'r').readlines()
 
