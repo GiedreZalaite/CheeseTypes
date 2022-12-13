@@ -5,8 +5,8 @@ import streamlit as st
 import pathlib
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
-#temp = pathlib.PosixPath
-#pathlib.PosixPath = pathlib.WindowsPath
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
 # Load the model
 model = load_model('TeachableMachine_Model.h5', compile=False)
 
