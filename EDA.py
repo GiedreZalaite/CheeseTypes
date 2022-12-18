@@ -12,7 +12,7 @@ if var =='Blue Danish':
 elif var=='Brie':
     cheese='Brie+Cheese/'
 elif var=='Cottage':
-    cheese='Cottage+Cheese/'
+    cheese='Cotage+Cheese/'
 elif var=='Feta':
     cheese='Feta+Cheese/'
 elif var=='Parmesan':
