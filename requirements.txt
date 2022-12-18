@@ -5,3 +5,4 @@ numpy
 fastbook
 pathlib
 pillow
+transformers
