@@ -7,10 +7,9 @@ import pathlib
 temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
-st.cache
-def load_model():
-   return load_model('keras.h5', compile=False)
-model=load_model()
+
+model= load_model('keras.h5', compile=False)
+
 
 st.header("Keras model prediction")
 cheese_types = ['Blue Danish', 'Brie', 'Cottage', 'Feta', 'Parmesan']
