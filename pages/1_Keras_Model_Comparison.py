@@ -8,7 +8,7 @@ temp = pathlib.PosixPath
 pathlib.PosixPath = pathlib.WindowsPath
 
 st.cache
-def load_model:
+def load_model():
    return load_model('keras.h5', compile=False)
 model=load_model()
 
