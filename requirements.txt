@@ -6,3 +6,4 @@ fastbook
 pathlib
 pillow
 transformers
+
